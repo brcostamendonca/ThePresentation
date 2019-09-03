@@ -1,4 +1,5 @@
 import { BrowserModule } from '@angular/platform-browser';
+import { HttpClientModule } from '@angular/common/http'; 
 import { NgModule } from '@angular/core';
 
 import { AppRoutingModule } from './app-routing.module';
@@ -24,6 +25,7 @@ import { FetchDataComponent } from './fetch-data/fetch-data.component';
   ],
   imports: [
     BrowserModule,
+    HttpClientModule,
     
     BrowserModule.withServerTransition({ appId: 'ng-cli-universal' }),
     AppRoutingModule,
