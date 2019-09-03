@@ -1,0 +1,65 @@
+.center {
+  text-align: center;
+}
+.right{
+  text-align: right;
+}
+
+.lineElement {
+    display: inline-block;
+    vertical-align: top;
+  }
+
+.smallText {
+  font-size: small;
+}
+
+.light {
+  font-weight: lighter;
+}
+
+.thick {
+  font-weight: bold;
+}
+
+.italic {
+  font-style: italic;
+}
+
+.myInfo {
+  text-align: center;
+}
+
+  .myInfo .grau {
+    color: green;
+    font-weight: bold;
+  }
+  .myInfo .morada {
+    color: grey;
+    font-weight:lighter;
+  }
+
+.CVinfo {
+
+}
+
+  .CVinfo .inicioDeSeccao {
+    color:green;
+  }
+
+  .CVinfo .infoRow {
+    display: flex;
+    justify-content: space-between;
+  }
+
+.infoRow .local {
+  color: green;
+  font-style: italic;
+  text-align: right;
+}
+
+.infoRow .datas {
+  font-style: italic;
+  text-align: right;
+}
+
