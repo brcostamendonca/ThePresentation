@@ -10,7 +10,6 @@ import { AngularComponent } from './angular/angular.component';
 import { NavMenuComponent } from './nav-menu/nav-menu.component';
 import { RouterModule } from '@angular/router';
 import { NotasComponent } from './notas/notas.component';
-import { FetchDataComponent } from './fetch-data/fetch-data.component';
 
 
 @NgModule({
@@ -21,7 +20,6 @@ import { FetchDataComponent } from './fetch-data/fetch-data.component';
     AngularComponent,
     NavMenuComponent,
     NotasComponent,
-    FetchDataComponent
   ],
   imports: [
     BrowserModule,
@@ -30,11 +28,10 @@ import { FetchDataComponent } from './fetch-data/fetch-data.component';
     BrowserModule.withServerTransition({ appId: 'ng-cli-universal' }),
     AppRoutingModule,
     RouterModule.forRoot([
-      { path: '', component: CvComponent/*HomeComponent*/, pathMatch: 'full' },
+      { path: '', component: HomeComponent, pathMatch: 'full' },
       { path: 'cv', component: CvComponent },
       { path: 'notas', component: NotasComponent },
       { path: 'angular', component: AngularComponent },
-      { path: 'fetch-data', component: FetchDataComponent },
     ])
   ],
   providers: [],
